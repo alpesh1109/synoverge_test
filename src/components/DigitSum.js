@@ -41,11 +41,11 @@ function DigitSum() {
           </div>
           <div className="col-sm">
             <form onSubmit={sumDigits} method="post" >
-              <div class="form-group" style={{ marginTop: '2%' }}>
+              <div class="form-group" style={marginStyle}>
                 <input className="form-control" type="number" name="num" value={num} onChange={(e) => handleChage(e.target.value.replace(/\D/g, ""))} required></input>
               </div>
-              <button type="submit" className="btn btn-primary" style={{ marginTop: '1%' }}>Sum</button><br />
-              <label>Sum : {result} </label>
+              <button type="submit" className="btn btn-primary" style={{ marginTop: '2%' }}>Sum</button><br />
+              <label style={marginStyle}>Output : {result} </label>
             </form>
           </div>
         </div>
@@ -53,5 +53,7 @@ function DigitSum() {
     </>
   );
 }
-
+const marginStyle ={
+  marginTop: '3%'
+}
 export default DigitSum;
