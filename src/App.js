@@ -3,7 +3,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [result, countSum] = useState(0);
-  const [num, setState] = useState('');
+  const [num, handleChage] = useState('');
 
   const sumFun = (e) => {
     e.preventDefault();
@@ -39,7 +39,7 @@ function App() {
           <div class="col-sm">
             <form onSubmit={sumFun} method="post" >
               <div class="form-group" style={{marginTop:'2%'}}>
-               <input className="form-control" type="number" name="num" value={num} onChange={(e) => setState(e.target.value)} required></input>
+               <input className="form-control" type="number" name="num" value={num} onChange={(e) => handleChage(e.target.value.replace(/\D/g,""))} required></input>
               </div>            
               <button type="submit" className="btn btn-primary" style={{marginTop:'1%'}}>Sum</button><br/>
               <label>sum : {result} </label>
