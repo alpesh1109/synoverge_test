@@ -50,7 +50,6 @@ function DigitSum() {
           </div>
         </div>
       </div>
-
     </>
   );
 }
