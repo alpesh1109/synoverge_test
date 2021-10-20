@@ -26,12 +26,12 @@ function DigitSum() {
 
   return (
     <>
-      <nav class="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg bg-light">
         <h3>Find Sum of Digits Number</h3>
       </nav>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
+      <div className="container">
+        <div className="row">
+          <div className="col-sm">
             <h4>How it works?</h4>
             <p>Steps</p>
             <p>1. Input a number</p>
@@ -41,7 +41,7 @@ function DigitSum() {
           </div>
           <div className="col-sm">
             <form onSubmit={sumDigits} method="post" >
-              <div class="form-group" style={marginStyle}>
+              <div className="form-group" style={marginStyle}>
                 <input className="form-control" type="number" name="num" value={num} onChange={(e) => handleChage(e.target.value.replace(/\D/g, ""))} required></input>
               </div>
               <button type="submit" className="btn btn-primary" style={{ marginTop: '2%' }}>Sum</button><br />
