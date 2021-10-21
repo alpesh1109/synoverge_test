@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import FindSum from "./FindSum";
 
 function DigitSum() {
   const [result, setResult] = useState(0);
@@ -43,6 +44,7 @@ function DigitSum() {
               <label style={marginStyle}>Output : {result} </label>
             </form>
           </div>
+          <FindSum/>
         </div>
       </div>
   );
