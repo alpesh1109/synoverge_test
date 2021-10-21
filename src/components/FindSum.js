@@ -14,6 +14,7 @@ function FindSum() {
         if (val !== min) {
             maxSum = maxSum + val;
         }
+        return 0;
     })
     return (
         <>
