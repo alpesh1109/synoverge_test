@@ -23,12 +23,7 @@ function DigitSum() {
     }
   };
 
-
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-light">
-        <h3>Find Sum of Digits Number</h3>
-      </nav>
       <div className="container">
         <div className="row">
           <div className="col-sm">
@@ -50,7 +45,6 @@ function DigitSum() {
           </div>
         </div>
       </div>
-    </>
   );
 }
 const marginStyle ={
